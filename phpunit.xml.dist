@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit-7.xsd"
     backupGlobals="false"
     backupStaticAttributes="false"
     bootstrap="tests/bootstrap.php"
@@ -14,7 +14,6 @@
     executionOrder="random"
     failOnWarning="true"
     failOnRisky="true"
-    failOnEmptyTestSuite="true"
     beStrictAboutOutputDuringTests="true"
     verbose="true"
 >
@@ -23,17 +22,12 @@
             <directory>tests</directory>
         </testsuite>
     </testsuites>
-    <coverage>
-        <include>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./src</directory>
-        </include>
-        <report>
-            <html outputDirectory="build/coverage"/>
-            <text outputFile="build/coverage.txt"/>
-            <clover outputFile="build/logs/clover.xml"/>
-        </report>
-    </coverage>
+        </whitelist>
+    </filter>
     <logging>
-        <junit outputFile="build/report.junit.xml"/>
+        <log type="junit" target="build/report.junit.xml"/>
     </logging>
 </phpunit>
