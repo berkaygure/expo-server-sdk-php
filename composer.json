@@ -1,16 +1,16 @@
 {
-    "name": "ctwillie/expo-server-sdk-php",
+    "name": "berkaygure/expo-server-sdk-php",
     "description": "Server-side library for working with Expo using PHP",
     "keywords": [
         "expo",
         "php",
         "expo-server-sdk-php"
     ],
-    "homepage": "https://github.com/ctwillie/expo-server-sdk-php",
+    "homepage": "https://github.com/berkaygure/expo-server-sdk-php",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/ctwillie/expo-server-sdk-php/issues",
-        "source": "https://github.com/ctwillie/expo-server-sdk-php"
+        "issues": "https://github.com/berkaygure/expo-server-sdk-php/issues",
+        "source": "https://github.com/berkaygure/expo-server-sdk-php"
     },
     "authors": [
         {
